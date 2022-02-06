@@ -1,15 +1,19 @@
-namespace AppCommand.Abstracts;
+using System.Threading;
+using System.Threading.Tasks;
 
-/// <summary>
-/// All commands MUST inherited from this abstract class. 
-/// </summary>
-public abstract class AbstractCommand
+namespace AppCommand.Abstracts
 {
     /// <summary>
-    /// Body of the command. When a command runs, this method will be invoked
+    /// All commands MUST inherited from this abstract class. 
     /// </summary>
-    /// <param name="args">Arguments that application runs with them</param>
-    /// <param name="cancellationToken">Optional cancellation token.</param>
-    /// <returns></returns>
-    public abstract Task Run(string[] args, CancellationToken cancellationToken = default);
+    public abstract class AbstractCommand
+    {
+        /// <summary>
+        /// Body of the command. When a command runs, this method will be invoked
+        /// </summary>
+        /// <param name="args">Arguments that application runs with them</param>
+        /// <param name="cancellationToken">Optional cancellation token.</param>
+        /// <returns></returns>
+        public abstract Task Run(string[] args, CancellationToken cancellationToken = default);
+    }
 }

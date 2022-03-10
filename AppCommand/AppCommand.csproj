@@ -7,8 +7,8 @@
         <RootNamespace>AppCommand</RootNamespace>
         <AssemblyName>AppCommand</AssemblyName>
         <PackageId>AppCommand</PackageId>
-        <PackageVersion>1.0.1</PackageVersion>
-        <Version>1.0.1</Version>
+        <PackageVersion>1.0.2</PackageVersion>
+        <Version>1.0.2</Version>
         <Authors>AshkanAbd</Authors>
         <Company>AshkanAbd</Company>
         <Title>Custom commandlines for dotnet applications</Title>

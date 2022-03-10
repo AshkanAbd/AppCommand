@@ -94,7 +94,7 @@ namespace AppCommand
         {
             if (args.Length >= 1 && HasCommand(args[0])) {
                 if (await InvokeCommandForResult(args[0].ToLower(), args, cancellationToken)) {
-                    Environment.Exit(1);
+                    Environment.Exit(0);
                 }
             }
         }
